@@ -12,6 +12,6 @@ fs.appendFile('employees.json', `{"name": "Employee 1 Name", "salary": 2000}` , 
     err ? console.log(err) : console.log('Dosya güncellendi..')
 })
 //  Dosya Silindi   
-// fs.unlink('employees.json', (err)=>{
-//     err ? console.log(err) : console.log('Dosya silindi..')
-// })
+fs.unlink('employees.json', (err)=>{
+    err ? console.log(err) : console.log('Dosya silindi..')
+})
